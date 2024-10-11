@@ -17,5 +17,3 @@ from online_sale o left join user_gender u
     on o.user_id = u.user_id
     where gender is not null
     group by year, month, gender
-    
-    
