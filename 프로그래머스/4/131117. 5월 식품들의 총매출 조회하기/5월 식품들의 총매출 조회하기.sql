@@ -12,6 +12,3 @@ from (SELECT *
         on fo.product_id = fp.product_id
 group by product_id
 order by TOTAL_SALES desc, product_id asc;
-
-
-
