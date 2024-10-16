@@ -22,9 +22,7 @@ select distinct ID, email, first_name, last_name
 from (
 select d.ID, d.email, d.first_name, d.last_name, 
     case when (c.CODE & d.skill_code) = c.code then 1 else 0 end as front
-from developers d , cte c
+from developers d join cte c
     ) as cte2
 where front = 1
 order by ID asc
-
-
