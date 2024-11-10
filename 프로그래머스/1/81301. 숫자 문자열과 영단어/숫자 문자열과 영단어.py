@@ -1,4 +1,5 @@
-import re
+# 딕셔너리만들어서 숫자:0 해주기
+# word를 num으로 바꾸기
 
 def solution(s):
     word_to_num = {
