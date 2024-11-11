@@ -17,9 +17,8 @@ def solution(d, budget):
         cnt = 0
         for j in d:
             answer +=j            
-            if answer > budget:
-                print(answer, cnt,0)
+            if answer > budget:                
                 return cnt            
             cnt+=1
-            print(answer, cnt)
+            
     
