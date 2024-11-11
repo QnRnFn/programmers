@@ -2,11 +2,14 @@
 # 
 
 def solution(t, p):
-    li = []
+    #li = []
     cnt = 0
+    # for i in range(len(t)-len(p)+1):
+    #     li.append(t[i:i+len(p)])
+    # for j in li:
+    #     if j <= p:
+    #         cnt +=1 
     for i in range(len(t)-len(p)+1):
-        li.append(t[i:i+len(p)])
-    for j in li:
-        if j <= p:
-            cnt +=1    
+        if t[i:i+len(p)] <=p:
+            cnt +=1
     return cnt
